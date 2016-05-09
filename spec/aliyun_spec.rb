@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe Aliyun do
+describe Aliyun_Admin do
   it 'has a version number' do
-    expect(Aliyun::VERSION).not_to be nil
+    expect(Aliyun_Admin::VERSION).not_to be nil
   end
 
   it 'can load options' do

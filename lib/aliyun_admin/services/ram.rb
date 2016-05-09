@@ -1,15 +1,15 @@
-module Aliyun
-  class CDNConfig < APIConfig
+module Aliyun_Admin
+  class RAMConfig < APIConfig
     def self.info
-      "Aliyu CDN Service"
+      "Aliyu RAM Service"
     end
     def self.endpoint
-      'https://cdn.aliyuncs.com/'
+      'https://ram.aliyuncs.com/'
     end
     def self.default_parameters
       {
         :Format=>"JSON",
-        :Version=>"2014-11-11",
+        :Version=>"2015-05-01",
         :SignatureMethod=>"HMAC-SHA1",
         :SignatureVersion=>"1.0"
       }

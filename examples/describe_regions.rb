@@ -7,7 +7,7 @@ options = {:access_key_id => "xxxxxx",
            :access_key_secret => "yyyyy",
            :service => :ecs}
 
-service = Aliyun::Service.new options
+service = Aliyun_Admin::Service.new options
 
 parameters = {}
 

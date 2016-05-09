@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'aliyun/version'
+require 'aliyun_admin/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "aliyun"
-  spec.version       = Aliyun::VERSION
+  spec.version       = Aliyun_Admin::VERSION
   spec.authors       = ["Liu Lantao"]
   spec.email         = ["liulantao@gmail.com"]
-  spec.summary       = %q{Ruby wrapper of Aliyun API for system administrator}
-  spec.description   = %q{Ruby wrapper of Aliyun API for system administrator.
+  spec.summary       = %q{Ruby wrapper of Aliyun_Admin API for system administrator}
+  spec.description   = %q{Ruby wrapper of Aliyun_Admin API for system administrator.
     Current for aliyun API version 2014-05-26
   }
   spec.homepage      = "https://github.com/Lax/aliyun"

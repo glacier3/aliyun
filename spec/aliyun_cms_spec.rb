@@ -1,19 +1,19 @@
 require 'spec_helper'
 
-describe Aliyun do
+describe Aliyun_Admin do
   it 'can create aliyun CMS(metrics) service' do
     options = load_options
     options[:service] = :cms
-    service = Aliyun::Service.new options
+    service = Aliyun_Admin::Service.new options
 
-    expect(service).to be_instance_of(Aliyun::Service)
-    expect(service.service).to be(Aliyun::CMSConfig)
+    expect(service).to be_instance_of(Aliyun_Admin::Service)
+    expect(service.service).to be(Aliyun_Admin::CMSConfig)
   end
 
   it 'can describe metric datum' do
     options = load_options
     options[:service] = :cms
-    service = Aliyun::Service.new options
+    service = Aliyun_Admin::Service.new options
     instanceId = load_ecs_instance_id
     instanceRegion = load_ecs_instance_region
     parameters = {

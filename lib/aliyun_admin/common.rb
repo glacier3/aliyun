@@ -6,7 +6,7 @@ require 'base64'
 require 'hmac-sha1'
 require 'json'
 
-module Aliyun
+module Aliyun_Admin
   class Service
     attr_accessor :access_key_id, :access_key_secret
     attr_accessor :options

@@ -1,15 +1,15 @@
-module Aliyun
-  class DNSConfig < APIConfig
+module Aliyun_Admin
+  class RDSConfig < APIConfig
     def self.info
-      "Aliyun DNS Service"
+      "Aliyu RDS Service"
     end
     def self.endpoint
-      'https://dns.aliyuncs.com/'
+      'https://rds.aliyuncs.com/'
     end
     def self.default_parameters
       {
         :Format=>"JSON",
-        :Version=>"2015-01-09",
+        :Version=>"2014-08-15",
         :SignatureMethod=>"HMAC-SHA1",
         :SignatureVersion=>"1.0"
       }

@@ -1,19 +1,19 @@
 require 'spec_helper'
 
-describe Aliyun do
+describe Aliyun_Admin do
   it 'can create aliyun cdn service' do
     options = load_options
     options[:service] = :cdn
-    service = Aliyun::Service.new options
+    service = Aliyun_Admin::Service.new options
 
-    expect(service).to be_instance_of(Aliyun::Service)
-    expect(service.service).to be(Aliyun::CDNConfig)
+    expect(service).to be_instance_of(Aliyun_Admin::Service)
+    expect(service.service).to be(Aliyun_Admin::CDNConfig)
   end
 
   it 'can query aliyun cdn service' do
     options = load_options
     options[:service] = :cdn
-    service = Aliyun::Service.new options
+    service = Aliyun_Admin::Service.new options
     parameters = {}
     cdn_service = service.DescribeCdnService parameters
 

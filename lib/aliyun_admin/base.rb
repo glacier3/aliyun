@@ -1,4 +1,4 @@
-module Aliyun
+module Aliyun_Admin
   class APIConfig
     def self.info
       raise "Service Name Missing!"

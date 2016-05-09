@@ -1,15 +1,15 @@
-module Aliyun
-  class CMSConfig < APIConfig
+module Aliyun_Admin
+  class STSConfig < APIConfig
     def self.info
-      "Aliyu CMS Service"
+      "Aliyu STS Service"
     end
     def self.endpoint
-      'http://metrics.aliyuncs.com/'
+      'https://sts.aliyuncs.com/'
     end
     def self.default_parameters
       {
         :Format=>"JSON",
-        :Version=>"2015-04-20",
+        :Version=>"2015-04-01",
         :SignatureMethod=>"HMAC-SHA1",
         :SignatureVersion=>"1.0"
       }

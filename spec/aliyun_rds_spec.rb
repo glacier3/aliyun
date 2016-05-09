@@ -1,19 +1,19 @@
 require 'spec_helper'
 
-describe Aliyun do
+describe Aliyun_Admin do
   it 'can create aliyun rds service' do
     options = load_options
     options[:service] = :rds
-    service = Aliyun::Service.new options
+    service = Aliyun_Admin::Service.new options
 
-    expect(service).to be_instance_of(Aliyun::Service)
-    expect(service.service).to be(Aliyun::RDSConfig)
+    expect(service).to be_instance_of(Aliyun_Admin::Service)
+    expect(service.service).to be(Aliyun_Admin::RDSConfig)
   end
 
   it 'can query aliyun rds regions' do
     options = load_options
     options[:service] = :rds
-    service = Aliyun::Service.new options
+    service = Aliyun_Admin::Service.new options
     parameters = {}
     regions = service.DescribeRegions parameters
 

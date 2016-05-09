@@ -1,14 +1,14 @@
-# Aliyun
+# Aliyun_Admin
 
 [![Fury](https://badge.fury.io/rb/aliyun.png)](http://badge.fury.io/rb/aliyun)
-[![Code Climate](https://codeclimate.com/github/Lax/aliyun/badges/gpa.svg)](https://codeclimate.com/github/Lax/aliyun)
-[![Test Coverage](https://codeclimate.com/github/Lax/aliyun/badges/coverage.svg)](https://codeclimate.com/github/Lax/aliyun/coverage)
+[![Code Climate](https://codeclimate.com/github/Lax/aliyun_admin/badges/gpa.svg)](https://codeclimate.com/github/Lax/aliyun)
+[![Test Coverage](https://codeclimate.com/github/Lax/aliyun_admin/badges/coverage.svg)](https://codeclimate.com/github/Lax/aliyun_admin/coverage)
 [![Travis](https://travis-ci.org/Lax/aliyun.svg?branch=master)](https://travis-ci.org/Lax/aliyun)
-[![CircleCI](https://circleci.com/gh/Lax/aliyun/tree/master.png?style=shield)](https://circleci.com/gh/Lax/aliyun)
-[![security](https://hakiri.io/github/Lax/aliyun/master.svg)](https://hakiri.io/github/Lax/aliyun/master)
+[![CircleCI](https://circleci.com/gh/Lax/aliyun_admin/tree/master.png?style=shield)](https://circleci.com/gh/Lax/aliyun)
+[![security](https://hakiri.io/github/Lax/aliyun_admin/master.svg)](https://hakiri.io/github/Lax/aliyun_admin/master)
 [![Dependency Status](https://gemnasium.com/Lax/aliyun.svg)](https://gemnasium.com/Lax/aliyun)
 
-Ruby wrapper of Aliyun API for system adminstrator.
+Ruby wrapper of Aliyun_Admin API for system adminstrator.
 
 ## Installation
 
@@ -37,7 +37,7 @@ Example:
       :service => :ecs
     }
 
-    service = Aliyun::Service.new options
+    service = Aliyun_Admin::Service.new options
     parameters = {}
 
     puts service.DescribeRegions parameters
@@ -57,7 +57,7 @@ Current support these services:
 
 ## Contributing
 
-1. Fork it ( https://github.com/Lax/aliyun/fork )
+1. Fork it ( https://github.com/Lax/aliyun_admin/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

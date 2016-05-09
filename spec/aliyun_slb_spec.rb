@@ -1,19 +1,19 @@
 require 'spec_helper'
 
-describe Aliyun do
+describe Aliyun_Admin do
   it 'can create aliyun slb service' do
     options = load_options
     options[:service] = :slb
-    service = Aliyun::Service.new options
+    service = Aliyun_Admin::Service.new options
 
-    expect(service).to be_instance_of(Aliyun::Service)
-    expect(service.service).to be(Aliyun::SLBConfig)
+    expect(service).to be_instance_of(Aliyun_Admin::Service)
+    expect(service.service).to be(Aliyun_Admin::SLBConfig)
   end
 
   it 'can query aliyun slb regions' do
     options = load_options
     options[:service] = :slb
-    service = Aliyun::Service.new options
+    service = Aliyun_Admin::Service.new options
     parameters = {}
     regions = service.DescribeRegions parameters
 
@@ -24,7 +24,7 @@ describe Aliyun do
   it "can describe aliyun slb regions" do
     options = load_options
     options[:service] = :slb
-    service = Aliyun::Service.new options
+    service = Aliyun_Admin::Service.new options
     parameters = {}
     slbs = service.DescribeLoadBalancers :RegionId => "cn-beijing"
 

@@ -1,20 +1,20 @@
 require 'spec_helper'
 
-describe Aliyun do
+describe Aliyun_Admin do
   it 'can create aliyun sts service' do
     options = load_options
     options[:service] = :sts
-    service = Aliyun::Service.new options
+    service = Aliyun_Admin::Service.new options
 
-    expect(service).to be_instance_of(Aliyun::Service)
-    expect(service.service).to be(Aliyun::STSConfig)
+    expect(service).to be_instance_of(Aliyun_Admin::Service)
+    expect(service.service).to be(Aliyun_Admin::STSConfig)
   end
 
 #  TODO: define a test policy
 #  it 'can get aliyun sts token' do
 #    options = load_options
 #    options[:service] = :sts
-#    service = Aliyun::Service.new options
+#    service = Aliyun_Admin::Service.new options
 #    parameters = {:StsVersion => 1, :Name => "aliyun_gem_t#{Time.now.to_i}", :Policy => "", :DurationSeconds => 900}
 #    sts_token = service.GetFederationToken parameters
 #

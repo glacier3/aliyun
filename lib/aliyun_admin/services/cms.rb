@@ -1,15 +1,15 @@
-module Aliyun
-  class ECSConfig < APIConfig
+module Aliyun_Admin
+  class CMSConfig < APIConfig
     def self.info
-      "Aliyu ECS Service"
+      "Aliyu CMS Service"
     end
     def self.endpoint
-      'https://ecs.aliyuncs.com/'
+      'http://metrics.aliyuncs.com/'
     end
     def self.default_parameters
       {
         :Format=>"JSON",
-        :Version=>"2014-05-26",
+        :Version=>"2015-04-20",
         :SignatureMethod=>"HMAC-SHA1",
         :SignatureVersion=>"1.0"
       }

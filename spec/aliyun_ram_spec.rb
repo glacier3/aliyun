@@ -1,19 +1,19 @@
 require 'spec_helper'
 
-describe Aliyun do
+describe Aliyun_Admin do
   it 'can create aliyun ram service' do
     options = load_options
     options[:service] = :ram
-    service = Aliyun::Service.new options
+    service = Aliyun_Admin::Service.new options
 
-    expect(service).to be_instance_of(Aliyun::Service)
-    expect(service.service).to be(Aliyun::RAMConfig)
+    expect(service).to be_instance_of(Aliyun_Admin::Service)
+    expect(service.service).to be(Aliyun_Admin::RAMConfig)
   end
 
 #  it 'can list aliyun ram users' do
 #    options = load_options
 #    options[:service] = :ram
-#    service = Aliyun::Service.new options
+#    service = Aliyun_Admin::Service.new options
 #    parameters = {}
 #    users = service.ListUsers parameters
 #
